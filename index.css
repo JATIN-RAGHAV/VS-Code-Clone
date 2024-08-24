@@ -275,6 +275,7 @@ body {
     padding-right: 20px;
     text-align: start;
     line-height: 1.5;
+    font-size:14px
 }
 
 .huge-button-img{
@@ -300,4 +301,22 @@ body {
     gap:20px;
     justify-content: center;
     align-items: center;
+}
+
+.credit-imgs{
+    width:25px;
+    cursor: pointer !important;
+}
+
+.credits{
+    display:flex;
+    justify-content:space-between;
+    padding:40px
+}
+
+.credit-links{
+    color:#9AA3B3;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
 }
