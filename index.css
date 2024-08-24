@@ -5,7 +5,6 @@ body {
 }
 
 .first-banner {
-  width: 100vw;
   border-style: solid;
   border-top-width: 0px;
   border-left-width: 0px;
@@ -167,11 +166,6 @@ body {
     display:flex;
     align-items: center;
     color:#9AA3B3;
-    margin:7px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #222222;
-    border-width: 1.5px;
     display:flex;
     text-decoration: none;
     background-color: #171717;
@@ -179,6 +173,61 @@ body {
     width:250px;
     justify-content: space-around;
     align-items: center;
+    border-radius:10px;
+}
+
+.language-desc-img-parent{
+    border-radius: 10px;
+    position:relative;
+    border-radius: 10px;
+    width:250px;
+    height:100px;
+    margin:7px;
+}
+
+.language-desc-img-overlay-one{
+    border-style: solid;
+    border-color: #222222;
+    border-width: 1.5px;
+    border-radius:10px;
+    position:absolute;
+    background:linear-gradient(rgb(23,23,23,0), rgb(23,23,23,0.5));
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+.language-desc-img-overlay-two{
+    border-style: solid;
+    border-color: #222222;
+    border-width: 1.5px;
+    border-radius:10px;
+    position:absolute;
+    background:linear-gradient(rgb(23,23,23,0.5), rgb(23,23,23,0.75));
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+.language-desc-img-overlay-three{
+    border-style: solid;
+    border-color: #222222;
+    border-width: 1.5px;
+    border-radius:10px;
+    position:absolute;
+    background:linear-gradient(rgb(23,23,23,0.75), rgb(23,23,23,01));
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
 }
 
 .language-desc-heading{
