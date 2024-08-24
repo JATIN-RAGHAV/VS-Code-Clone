@@ -163,6 +163,14 @@ body {
     color: #0078d4;
 }
 
+.left-text-inline-link{
+    color:#0078d4
+}
+
+.right-banner-img{
+    width: 45vw;
+}
+
 .language-desc-img{
     display:flex;
     align-items: center;
