@@ -106,6 +106,7 @@ html, body {
 /* classes for the main body */
 .main-body{
     width: 100%;
+    margin-top: 60px;
 }
 
 /* Gradient banner starts */
@@ -174,6 +175,10 @@ html, body {
 /* Right part */
 .gradient-banner-right {
   padding-right: 100px;
+}
+
+.banner-img{
+    padding: 50px 50px;
 }
 
 /* The normal banners which will be called banner */
