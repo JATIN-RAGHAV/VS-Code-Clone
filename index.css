@@ -1,17 +1,20 @@
 /* Global Variables */
 :root {
   --text-color: #9aa3b3;
+  --background: #0e0e0e;
 }
 
 body {
-  background-color: #0e0e0e;
+  background-color: var(--background);
   color: white;
   font-family: "Roboto", sans-serif;
+  margin:0px 0px;
 }
 
 /* classes for the navbar */
 .app-bar-div {
-    height: 40px;
+  height: 40px;
+  background-color: var(--background);
   border-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #222222;
@@ -31,7 +34,7 @@ body {
   z-index: 1000;
 }
 
-.app-bar-left {
+.app-bar-sub {
   display: flex;
   align-items: center;
 }
@@ -54,8 +57,8 @@ body {
 }
 
 .search-box {
-  background-color: #0e0e0e;
-  color: #0e0e0e;
+  background-color: var(--background);
+  color: var(--background);
   border: none;
   font-size: 13px;
   height: 30px;
@@ -80,42 +83,43 @@ body {
   cursor: pointer;
 }
 
-.icon-bar{
-    background-color: rgb(155, 163, 180);
-    border-radius: 1px;
-    box-sizing: border-box;
-    color: rgb(155, 163, 180);
-    cursor:pointer;
-    display:block;
-    height:2px;
-    width:22px
+.icon-bar {
+  background-color: rgb(155, 163, 180);
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: rgb(155, 163, 180);
+  cursor: pointer;
+  display: block;
+  height: 2px;
+  width: 22px;
 }
 
-.icon-bar-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height:14px;
-    padding:10px 10px;
-    cursor:pointer;
+.icon-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14px;
+  padding: 10px 10px;
+  cursor: pointer;
 }
 
 /* classes for the main body */
 .main-body {
   left: 0;
   right: 0;
+  width: 100vw;
 }
 
 /* Gradient banner starts */
 .gradient-banner {
-  width: 100vw;
+  width: 100%;
   border-style: solid;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 2px;
   border-color: #222222;
-  background: linear-gradient(#0e0e0e, #141414);
+  background: linear-gradient(var(--background), #141414);
 }
 
 .version {
@@ -402,21 +406,28 @@ body {
   padding: 10px;
 }
 
-.mobile-show{
-    display:none;
+.mobile-show {
+  display: none;
 }
 
 /* Media query for the appbar */
-@media screen and (max-width:1060px){
-    .app-bar-div .mobile-hide{
-        display:none;
-    }
-    .app-bar-div .mobile-show{
-        display:block;
-    }
-    .app-bar-div{
-        padding:10px 15px;
-    }
+@media screen and (max-width: 1060px) {
+  .app-bar-div .mobile-hide {
+    display: none;
+  }
+  .app-bar-div .mobile-show {
+    display: block;
+  }
+  .app-bar-div {
+    padding: 10px 15px;
+    height: 70px;
+  }
+  .vs-code{
+    font-size: 30px;
+  }
+  .logo-img{
+    width:40px;
+  }
 }
 
 /* @media screen and (max-width: 700px) {
