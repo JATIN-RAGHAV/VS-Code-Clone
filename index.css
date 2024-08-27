@@ -452,6 +452,14 @@ body {
     width:70%
 }
 
+
+/* Media query for buttons */
+@media screen and (max-width:1400px){
+    .huge-button{
+        width: 250px;
+    }
+}
+
 /* Media query at a middle screen size */
 @media screen and (max-width: 1200px) {
   /* For the appbar things */
@@ -511,6 +519,12 @@ body {
   }
   .right-banner-img{
     width:100%
+  }
+  .button-row{
+    width:100%;
+  }
+  .huge-button{
+    width:45%;
   }
 }
 
@@ -597,6 +611,12 @@ body {
     .banner{
         flex-wrap:wrap;
     }
+
+    .small-show-flex{
+        display:flex;
+        flex-direction:column
+    }
+
     .left-text{
         width: 100%;
         align-items: center;
@@ -622,5 +642,8 @@ body {
     .banner-text{
         width:95%
     }
-
+    .huge-button{
+        width:95%;
+        margin:5px 0px;
+    }
 }
