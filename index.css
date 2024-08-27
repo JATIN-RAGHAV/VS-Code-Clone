@@ -4,15 +4,16 @@
   --background: #0e0e0e;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden; /* To prevent any horizontal overflow */
-    background-color: var(--background);
-    color: white;
-    font-family: "Roboto", sans-serif;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* To prevent any horizontal overflow */
+  background-color: var(--background);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
 
 /* classes for the navbar */
 .app-bar-div {
@@ -58,7 +59,7 @@ html, body {
 
 .search-box {
   background-color: var(--background);
-  color: var(--background);
+  color: var(--text-color);
   border: none;
   font-size: 13px;
   height: 30px;
@@ -104,9 +105,9 @@ html, body {
 }
 
 /* classes for the main body */
-.main-body{
-    width: 100%;
-    margin-top: 60px;
+.main-body {
+  width: 100%;
+  margin-top: 60px;
 }
 
 /* Gradient banner starts */
@@ -136,12 +137,14 @@ html, body {
 
 .gradient-banner-main {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* Left side */
 .gradient-banner-left {
-  width: 50vw;
-  padding: 100px;
+  width: 500px;
+  padding:100px 0px;
 }
 
 .gradient-banner-left-oval-div {
@@ -174,11 +177,11 @@ html, body {
 
 /* Right part */
 .gradient-banner-right {
-  padding-right: 100px;
 }
 
-.banner-img{
-    padding: 50px 50px;
+.banner-img {
+  padding: 50px 0px;
+  width: 500px;
 }
 
 /* The normal banners which will be called banner */
@@ -412,8 +415,26 @@ html, body {
   display: none;
 }
 
-/* Media query for the appbar */
-@media screen and (max-width: 1060px) {
+.middle-show {
+  display: none;
+}
+
+/* Media query at a middle screen size */
+@media screen and (max-width: 1200px) {
+  /* For the appbar things */
+  .app-bar-div .middle-hide {
+    display: none;
+  }
+  .app-bar-div .middle-show {
+    display: block;
+  }
+
+  /* For the gradient banner */
+}
+
+/* Media query for a small screen size */
+@media screen and (max-width: 960px) {
+    /* For App bar */
   .app-bar-div .mobile-hide {
     display: none;
   }
@@ -424,26 +445,19 @@ html, body {
     padding: 10px 15px;
     height: 70px;
   }
-  .vs-code{
+  .vs-code {
     font-size: 30px;
     font-weight: 600;
   }
-  .logo-img{
-    width:40px;
+  .logo-img {
+    width: 40px;
   }
-  .main-body{
-    margin-top:100px
-  }
-}
 
-/* @media screen and (max-width: 700px) {
-  .mobile-hide {
-    display: none;
+  /* For main body starts */
+  .main-body {
+    margin-top: 100px;
   }
-  .mobile-show{
-    display:block;
-  }
-  .app-bar-div{
-    
-  }
-} */
+  /* Gradient banner */
+  
+
+}
