@@ -122,7 +122,7 @@ html, body {
 }
 
 .version {
-  padding-top: 20px;
+  padding: 20px 35px;
   text-align: center;
   margin-top: 25px;
   font-size: 13px;
@@ -426,9 +426,13 @@ html, body {
   }
   .vs-code{
     font-size: 30px;
+    font-weight: 600;
   }
   .logo-img{
     width:40px;
+  }
+  .main-body{
+    margin-top:100px
   }
 }
 
