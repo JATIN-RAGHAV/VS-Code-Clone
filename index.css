@@ -186,8 +186,8 @@ body {
 
 /* The normal banners which will be called banner */
 .banners {
-  padding-left: 180px;
-  padding-right: 180px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 100px;
 }
 
@@ -197,10 +197,19 @@ body {
   display: flex;
   margin-top: 100px;
   margin-bottom: 100px;
+  justify-content:space-evenly;
+}
+
+.languages{
+    width:40px;
+    height:40px;
 }
 
 .left-text {
   width: 30%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
 }
 
 .left-text-heading {
@@ -419,15 +428,21 @@ body {
   display: none;
 }
 
+.small-show{
+    display:none;
+}
+
 /* Media query at a middle screen size */
 @media screen and (max-width: 1200px) {
   /* For the appbar things */
-  .app-bar-div .middle-hide {
+  .middle-hide {
     display: none;
   }
-  .app-bar-div .middle-show {
+    .middle-show {
     display: block;
   }
+
+  /* For the gradient banner */
   .banner-img{
     width:500px;
     padding-top:160px
@@ -436,16 +451,35 @@ body {
     width:250px
   }
 
-  /* For the gradient banner */
+  .language-icon{
+    margin:5px
+  }
+
+  /* Other banners */
+  .banners{
+    padding: 0px 10px 80px 10px;
+  }
+
+  .left-text{
+    width:40%
+  }
+
+  .right-text{
+    width:50%
+  }
+
+  .icon-column{
+    padding:10px
+  }
 }
 
 /* Media query for a small screen size */
 @media screen and (max-width: 960px) {
     /* For App bar */
-  .app-bar-div .mobile-hide {
+  .small-hide {
     display: none;
   }
-  .app-bar-div .mobile-show {
+    .small-show {
     display: block;
   }
   .app-bar-div {
@@ -462,7 +496,7 @@ body {
 
   /* For main body starts */
   .main-body {
-    margin-top: 100px;
+    margin-top: 5px;
   }
   /* Gradient banner */
   .gradient-banner-left{
@@ -485,5 +519,32 @@ body {
     justify-content: center;
     width: 100%;
   }
+  .right-text{
+    width:40%
+  }
+  .left-text{
+    width:60%
+  }
+  .icon-column{
+    padding:10px
+  }
+  .banner{
+    width:100%;
+    justify-content:space-between
+  }
+}
 
+/* Media query for mobile screens */
+@media screen and (max-width:720px) {
+    .banner{
+        flex-wrap:wrap;
+    }
+    .left-text{
+        width: 100%;
+        align-items: center;
+    }
+    .right-text{
+        width: 100%;
+        align-items:center;
+    }
 }

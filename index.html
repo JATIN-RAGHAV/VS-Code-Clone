@@ -50,23 +50,23 @@
           alt=""
         />
         <span class="vs-code">Visual Studio Code</span>
-        <a class="links mobile-hide" href="/">Docs</a>
-        <a class="links mobile-hide" href="/">Updates</a>
-        <a class="links mobile-hide" href="/">Blog</a>
-        <a class="links mobile-hide" href="/">API</a>
-        <a class="links mobile-hide" href="/">Extensions</a>
-        <a class="links mobile-hide" href="/">FAQs</a>
+        <a class="links small-hide" href="/">Docs</a>
+        <a class="links small-hide" href="/">Updates</a>
+        <a class="links small-hide" href="/">Blog</a>
+        <a class="links small-hide" href="/">API</a>
+        <a class="links small-hide" href="/">Extensions</a>
+        <a class="links small-hide" href="/">FAQs</a>
       </div>
       <!-- The right side elements of the app bar -->
       <div class="app-bar-sub">
-        <span class="middle-show mobile-hide" ><img src="https://code.visualstudio.com/assets/icons/search-dark.svg" width='20px' alt=""></span>
+        <span class="middle-show small-hide" ><img src="https://code.visualstudio.com/assets/icons/search-dark.svg" width='20px' alt=""></span>
         <input
-          class="middle-hide search-box mobile-hide"
+          class="middle-hide search-box small-hide"
           type="text"
           placeholder="Search Docs"
         />
-        <button class="download-button mobile-hide">Download</button>
-        <div class="mobile-show">
+        <button class="download-button small-hide">Download</button>
+        <div class="small-show">
           <div class="icon-bar-container">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -134,10 +134,13 @@
             </div>
           </div>
           <div class="right-text">
-            <div class="icon-column">
+
+            <!-- Columns for bigger screen -->
+             <!-- First column -->
+            <div class="icon-column small-hide">
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-js.png"
                   alt=""
                 />
@@ -145,7 +148,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-cs.png"
                   alt=""
                 />
@@ -153,7 +156,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-java.png"
                   alt=""
                 />
@@ -161,17 +164,18 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-markdown.png"
                   alt=""
                 />
                 Markdown
               </div>
             </div>
-            <div class="icon-column">
+            <!-- Second column -->
+            <div class="icon-column small-hide ">
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-ts.png"
                   alt=""
                 />
@@ -179,7 +183,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-cpp.png"
                   alt=""
                 />
@@ -187,7 +191,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-json.png"
                   alt=""
                 />
@@ -195,17 +199,18 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-powershell.png"
                   alt=""
                 />
                 PowerShell
               </div>
             </div>
-            <div class="icon-column">
+            <!-- Third Column -->
+            <div class="icon-column small-hide ">
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-python.png"
                   alt=""
                 />
@@ -213,7 +218,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-html.png"
                   alt=""
                 />
@@ -221,7 +226,7 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-php.png"
                   alt=""
                 />
@@ -229,13 +234,119 @@
               </div>
               <div class="language-icon">
                 <img
-                  style="width: 40px; height: 40px"
+                  class="languages"
                   src="https://code.visualstudio.com/assets/home/language-yaml.png"
                   alt=""
                 />
                 Yaml
               </div>
             </div>
+
+            <!-- Columns for smaller screen -->
+             <!-- First Column -->
+            <div class="icon-column small-show ">
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-js.png"
+                  alt=""
+                />
+                JavaScript
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-cs.png"
+                  alt=""
+                />
+                C#
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-java.png"
+                  alt=""
+                />
+                Java
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-markdown.png"
+                  alt=""
+                />
+                Markdown
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-ts.png"
+                  alt=""
+                />
+                TypeScript
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-cpp.png"
+                  alt=""
+                />
+                C++
+              </div>
+            </div>
+            <!-- Second column -->
+            <div class="icon-column small-show">
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-json.png"
+                  alt=""
+                />
+                Json
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-powershell.png"
+                  alt=""
+                />
+                PowerShell
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-python.png"
+                  alt=""
+                />
+                Python
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-html.png"
+                  alt=""
+                />
+                HTML
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-php.png"
+                  alt=""
+                />
+                PHP
+              </div>
+              <div class="language-icon">
+                <img
+                  class="languages"
+                  src="https://code.visualstudio.com/assets/home/language-yaml.png"
+                  alt=""
+                />
+                Yaml
+              </div>
+            </div>
+
+
           </div>
         </div>
 
