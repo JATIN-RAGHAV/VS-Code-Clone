@@ -551,9 +551,19 @@ body {
   .right-text{
     width:40%
   }
+
+  .right-text-with-img{
+    width:60%
+  }
+
   .left-text{
     width:60%
   }
+
+  .left-text-with-img-on-right{
+    width:40%
+  }
+
   .icon-column{
     padding:10px
   }
@@ -591,5 +601,9 @@ body {
     }
     .left-text-text{
         text-align:center;
+    }
+
+    .icon-row-desc{
+        width:100%
     }
 }
