@@ -223,8 +223,13 @@ body {
   line-height: 1.5;
 }
 
+.left-text-inline-link-container{
+    text-align: center;
+    margin:10px
+}
+
 .right-text {
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -467,16 +472,21 @@ body {
   }
 
   .left-text{
-    width:40%
+    width:35%
   }
 
   .right-text{
-    width:50%
+    width:55%
   }
 
   .icon-column{
     padding:10px
   }
+
+  .right-text-desc{
+    width:55%
+  }
+
   .language-desc-img-div{
     width:150px;
     display:flex;
@@ -512,7 +522,7 @@ body {
 
   /* For main body starts */
   .main-body {
-    margin-top: 5px;
+    margin-top: 100px;
   }
   /* Gradient banner */
   .gradient-banner-left{
@@ -570,6 +580,6 @@ body {
     }
     .right-text-desc{
         width:100%;
-        
+
     }
 }
