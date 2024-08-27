@@ -4,12 +4,15 @@
   --background: #0e0e0e;
 }
 
-body {
-  background-color: var(--background);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin:0px 0px;
-}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* To prevent any horizontal overflow */
+    background-color: var(--background);
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
 
 /* classes for the navbar */
 .app-bar-div {
@@ -22,12 +25,9 @@ body {
   border-right: none;
   border-top: none;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10%;
   position: fixed;
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
   top: 0;
   left: 0;
   right: 0;
@@ -104,10 +104,8 @@ body {
 }
 
 /* classes for the main body */
-.main-body {
-  left: 0;
-  right: 0;
-  width: 100vw;
+.main-body{
+    width: 100%;
 }
 
 /* Gradient banner starts */
@@ -137,7 +135,6 @@ body {
 
 .gradient-banner-main {
   display: flex;
-  padding: 50px;
 }
 
 /* Left side */
