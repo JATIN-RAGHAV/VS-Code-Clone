@@ -440,6 +440,18 @@ body {
     display:none;
 }
 
+.text-banner{
+    width: 100%;
+              text-align: center;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+}
+
+.banner-text{
+    width:70%
+}
+
 /* Media query at a middle screen size */
 @media screen and (max-width: 1200px) {
   /* For the appbar things */
@@ -606,4 +618,9 @@ body {
     .icon-row-desc{
         width:100%
     }
+
+    .banner-text{
+        width:95%
+    }
+
 }
