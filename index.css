@@ -224,7 +224,7 @@ body {
 }
 
 .left-text-inline-link-container{
-    text-align: center;
+    text-align: left;
     margin:10px
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .right-banner-img {
-  width: 45vw;
+  width: 700px;
 }
 
 .language-desc-img {
@@ -497,6 +497,9 @@ body {
     margin:0 0;
     padding: 0 0;
   }
+  .right-banner-img{
+    width:100%
+  }
 }
 
 /* Media query for a small screen size */
@@ -562,7 +565,9 @@ body {
   .language-desc-img-div{
     width:100px;
 }
-
+    .right-banner-img{
+        width:90%
+    }
 }
 
 /* Media query for mobile screens */
@@ -580,6 +585,11 @@ body {
     }
     .right-text-desc{
         width:100%;
-
+    }
+    .left-text-inline-link-container{
+        text-align: center;
+    }
+    .left-text-text{
+        text-align:center;
     }
 }
