@@ -539,10 +539,10 @@ body {
   }
   .app-bar-div {
     padding: 10px 15px;
-    height: 70px;
+    height: 50px;
   }
   .vs-code {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
   }
   .logo-img {
@@ -551,7 +551,7 @@ body {
 
   /* For main body starts */
   .main-body {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   /* Gradient banner */
   .gradient-banner-left{
@@ -602,7 +602,7 @@ body {
     width:100px;
 }
     .right-banner-img{
-        width:90%
+        width:99%
     }
 }
 
@@ -615,6 +615,10 @@ body {
     .small-show-flex{
         display:flex;
         flex-direction:column
+    }
+
+    .vs-code{
+
     }
 
     .left-text{
@@ -646,4 +650,18 @@ body {
         width:95%;
         margin:5px 0px;
     }
+
+    .gradient-banner-left-main-text{
+      font-size:50px;
+    }
+
+    .gradient-banner-left-oval-div {
+      font-size: 14px;
+      width: 350px;
+    }
+
+    .gradient-banner-left{
+      padding:10px 0px
+    }
+
 }
