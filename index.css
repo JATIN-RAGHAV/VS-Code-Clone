@@ -314,6 +314,7 @@ body {
 }
 
 .language-desc {
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
