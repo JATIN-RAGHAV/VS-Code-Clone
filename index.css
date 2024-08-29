@@ -610,15 +610,12 @@ body {
 @media screen and (max-width:720px) {
     .banner{
         flex-wrap:wrap;
+        margin:40px 0px;
     }
 
     .small-show-flex{
         display:flex;
         flex-direction:column
-    }
-
-    .vs-code{
-
     }
 
     .left-text{
