@@ -260,6 +260,13 @@ body {
   align-items: center;
   color: var(--text-color);
   margin: 10px;
+  position:relative;
+  transition: top 300ms;
+  top:0px;
+}
+
+.language-icon:hover{
+  top:10px;
 }
 
 .left-text-link {
